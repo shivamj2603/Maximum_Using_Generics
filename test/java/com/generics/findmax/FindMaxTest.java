@@ -77,4 +77,12 @@ class FindMaxTest {
 		assertEquals(second, findMax.findMaxString(first, second, third));
 	}
 	
+	@Test
+	public void givenSecondMaxString_shouldReturn_Second() {
+		String first = "Banana";
+		String second = "Apple";
+		String third = "Peach";
+		assertEquals(third, findMax.findMaxString(first, second, third));
+	}
+	
 }
