@@ -38,7 +38,7 @@ class FindMaxTest {
 	}
 	
 	@Test
-	public void givenFirstMax_shouldReturn_first() {
+	public void givenFirstMaxFloat_shouldReturn_first() {
 		Float first = 3.1f;
 		Float second = 2.1f;
 		Float third = 1.1f;
@@ -46,19 +46,27 @@ class FindMaxTest {
 	}
 	
 	@Test
-	public void givenSecondMax_shouldReturn_Second() {
+	public void givenSecondMaxFloat_shouldReturn_Second() {
 		Float first = 2.1f;
 		Float second = 3.1f;
 		Float third = 1.1f;
-		assertEquals(first, findMax.findMaxFloat(first, second, third));
+		assertEquals(second, findMax.findMaxFloat(first, second, third));
 	}
 	
 	@Test
-	public void givenThirdMax_shouldReturn_Third() {
+	public void givenThirdMaxFloat_shouldReturn_Third() {
 		Float first = 2.1f;
 		Float second = 1.1f;
 		Float third = 3.1f;
-		assertEquals(first, findMax.findMaxFloat(first, second, third));
+		assertEquals(third, findMax.findMaxFloat(first, second, third));
+	}
+	
+	@Test
+	public void givenFirstMaxString_shouldReturn_First() {
+		String first = "Peach";
+		String second = "Banana";
+		String third = "Apple";
+		assertEquals(first, findMax.findMaxString(first, second, third));
 	}
 	
 }
