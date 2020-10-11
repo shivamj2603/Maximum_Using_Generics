@@ -52,5 +52,13 @@ class FindMaxTest {
 		Float third = 1.1f;
 		assertEquals(first, findMax.findMaxFloat(first, second, third));
 	}
-
+	
+	@Test
+	public void givenThirdMax_shouldReturn_Third() {
+		Float first = 2.1f;
+		Float second = 1.1f;
+		Float third = 3.1f;
+		assertEquals(first, findMax.findMaxFloat(first, second, third));
+	}
+	
 }
