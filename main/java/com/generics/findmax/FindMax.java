@@ -26,7 +26,7 @@ public class FindMax {
 	 * @param num3
 	 * @return
 	 */
-	public static Float findMaxInt(Float num1, Float num2, Float num3) {
+	public static Float findMaxFloat(Float num1, Float num2, Float num3) {
 		Float max = num1;
 		if (num2.compareTo(max) > 0) {
 			max = num2;
