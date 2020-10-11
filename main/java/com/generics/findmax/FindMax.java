@@ -36,5 +36,15 @@ public class FindMax {
 		}
 		return max;
 	}
+	public static String findMaxString(String num1, String num2, String num3) {
+		String max = num1;
+		if (num2.compareTo(max) > 0) {
+			max = num2;
+		}
+		if (num3.compareTo(max) > 0) {
+			max = num3;
+		}
+		return max;
+	}
 
 }
