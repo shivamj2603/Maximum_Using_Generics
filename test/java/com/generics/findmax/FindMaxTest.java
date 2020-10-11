@@ -29,4 +29,12 @@ class FindMaxTest {
 		assertEquals(second, findMax.findMaxInt(first, second, third));
 	}
 
+	@Test
+	public void givenThirdMax_shouldReturn_third() {
+		Integer first = 2;
+		Integer second = 1;
+		Integer third = 3;
+		assertEquals(third, findMax.findMaxInt(first, second, third));
+	}
+
 }
