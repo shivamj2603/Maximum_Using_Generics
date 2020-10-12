@@ -78,4 +78,31 @@ class FindMaxTest {
 		assertEquals(third, new FindMax<String>(first,second,third).testMaximum());
 	}
 	
+	@Test
+	public void givenMultipeInt_shouldReturn_maxInt() {
+		Integer first = 1;
+		Integer second = 2;
+		Integer third = 3;
+		Integer fourth = 4;
+		assertEquals(fourth, new FindMax<Integer>(first, second, third, fourth).testMaximum());
+	}
+
+	@Test
+	public void givenMultipeFloat_shouldReturn_maxFloat() {
+		Float first = 1.1f;
+		Float second = 3.1f;
+		Float third = 4.1f;
+		Float fourth = 2.1f;
+		assertEquals(third, new FindMax<Float>(first, second, third, fourth).testMaximum());
+	}
+
+	@Test
+	public void givenMultipeString_shouldReturn_maxString() {
+		String first = "peach";
+		String second = "banana";
+		String third = "apple";
+		String fourth = "coconut";
+		assertEquals(first, new FindMax<String>(first, second, third, fourth).testMaximum());
+	}
+
 }
