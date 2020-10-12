@@ -6,19 +6,12 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 class FindMaxTest {
-	public static FindMax findMax;
-
-	@BeforeAll
-	public static void setUp() {
-		findMax = new FindMax();
-	}
-
 	@Test
 	public void givenFirstMaxInt_shouldReturn_first() {
 		Integer first = 3;
 		Integer second = 2;
 		Integer third = 1;
-		assertEquals(first, findMax.findMax(first, second, third));
+		assertEquals(first, new FindMax<Integer>(first,second,third).testMaximum());
 	}
 
 	@Test
@@ -26,7 +19,7 @@ class FindMaxTest {
 		Integer first = 2;
 		Integer second = 3;
 		Integer third = 1;
-		assertEquals(second, findMax.findMax(first, second, third));
+		assertEquals(second, new FindMax<Integer>(first,second,third).testMaximum());
 	}
 
 	@Test
@@ -34,7 +27,7 @@ class FindMaxTest {
 		Integer first = 2;
 		Integer second = 1;
 		Integer third = 3;
-		assertEquals(third, findMax.findMax(first, second, third));
+		assertEquals(third, new FindMax<Integer>(first,second,third).testMaximum());
 	}
 	
 	@Test
@@ -42,7 +35,7 @@ class FindMaxTest {
 		Float first = 3.1f;
 		Float second = 2.1f;
 		Float third = 1.1f;
-		assertEquals(first, findMax.findMax(first, second, third));
+		assertEquals(first, new FindMax<Float>(first,second,third).testMaximum());
 	}
 	
 	@Test
@@ -50,7 +43,7 @@ class FindMaxTest {
 		Float first = 2.1f;
 		Float second = 3.1f;
 		Float third = 1.1f;
-		assertEquals(second, findMax.findMax(first, second, third));
+		assertEquals(second, new FindMax<Float>(first,second,third).testMaximum());
 	}
 	
 	@Test
@@ -58,7 +51,7 @@ class FindMaxTest {
 		Float first = 2.1f;
 		Float second = 1.1f;
 		Float third = 3.1f;
-		assertEquals(third, findMax.findMax(first, second, third));
+		assertEquals(third, new FindMax<Float>(first,second,third).testMaximum());
 	}
 	
 	@Test
@@ -66,7 +59,7 @@ class FindMaxTest {
 		String first = "Peach";
 		String second = "Banana";
 		String third = "Apple";
-		assertEquals(first, findMax.findMax(first, second, third));
+		assertEquals(first, new FindMax<String>(first,second,third).testMaximum());
 	}
 	
 	@Test
@@ -74,7 +67,7 @@ class FindMaxTest {
 		String first = "Banana";
 		String second = "Peach";
 		String third = "Apple";
-		assertEquals(second, findMax.findMax(first, second, third));
+		assertEquals(second, new FindMax<String>(first,second,third).testMaximum());
 	}
 	
 	@Test
@@ -82,7 +75,7 @@ class FindMaxTest {
 		String first = "Banana";
 		String second = "Apple";
 		String third = "Peach";
-		assertEquals(third, findMax.findMax(first, second, third));
+		assertEquals(third, new FindMax<String>(first,second,third).testMaximum());
 	}
 	
 }
