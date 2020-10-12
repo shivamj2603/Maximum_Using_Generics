@@ -22,7 +22,9 @@ public class FindMax<E extends Comparable <E>>{
 	 * @return
 	 */
 	public E testMaximum() {
-		return findMax(parameters);
+		E max = findMax(parameters);
+		printMax(max); 
+		return max;
 	}
 
 	/**
@@ -39,6 +41,15 @@ public class FindMax<E extends Comparable <E>>{
 		E max = stream.sorted().reduce((first,second) -> second).orElse(null);
 		return max;
 		
+	}
+	/**
+	 * Usecase 5
+	 * Function is a generic method and prints the maximum value
+	 * @param <E>
+	 * @param max
+	 */
+	public static <E> void printMax(E max) {
+		System.out.println(max);
 	}
 }
 
