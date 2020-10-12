@@ -18,7 +18,7 @@ class FindMaxTest {
 		Integer first = 3;
 		Integer second = 2;
 		Integer third = 1;
-		assertEquals(first, findMax.findMaxInt(first, second, third));
+		assertEquals(first, findMax.findMax(first, second, third));
 	}
 
 	@Test
@@ -26,7 +26,7 @@ class FindMaxTest {
 		Integer first = 2;
 		Integer second = 3;
 		Integer third = 1;
-		assertEquals(second, findMax.findMaxInt(first, second, third));
+		assertEquals(second, findMax.findMax(first, second, third));
 	}
 
 	@Test
@@ -34,7 +34,7 @@ class FindMaxTest {
 		Integer first = 2;
 		Integer second = 1;
 		Integer third = 3;
-		assertEquals(third, findMax.findMaxInt(first, second, third));
+		assertEquals(third, findMax.findMax(first, second, third));
 	}
 	
 	@Test
@@ -42,7 +42,7 @@ class FindMaxTest {
 		Float first = 3.1f;
 		Float second = 2.1f;
 		Float third = 1.1f;
-		assertEquals(first, findMax.findMaxFloat(first, second, third));
+		assertEquals(first, findMax.findMax(first, second, third));
 	}
 	
 	@Test
@@ -50,7 +50,7 @@ class FindMaxTest {
 		Float first = 2.1f;
 		Float second = 3.1f;
 		Float third = 1.1f;
-		assertEquals(second, findMax.findMaxFloat(first, second, third));
+		assertEquals(second, findMax.findMax(first, second, third));
 	}
 	
 	@Test
@@ -58,7 +58,7 @@ class FindMaxTest {
 		Float first = 2.1f;
 		Float second = 1.1f;
 		Float third = 3.1f;
-		assertEquals(third, findMax.findMaxFloat(first, second, third));
+		assertEquals(third, findMax.findMax(first, second, third));
 	}
 	
 	@Test
@@ -66,7 +66,7 @@ class FindMaxTest {
 		String first = "Peach";
 		String second = "Banana";
 		String third = "Apple";
-		assertEquals(first, findMax.findMaxString(first, second, third));
+		assertEquals(first, findMax.findMax(first, second, third));
 	}
 	
 	@Test
@@ -74,15 +74,15 @@ class FindMaxTest {
 		String first = "Banana";
 		String second = "Peach";
 		String third = "Apple";
-		assertEquals(second, findMax.findMaxString(first, second, third));
+		assertEquals(second, findMax.findMax(first, second, third));
 	}
 	
 	@Test
-	public void givenSecondMaxString_shouldReturn_Second() {
+	public void givenThirdMaxString_shouldReturn_Third() {
 		String first = "Banana";
 		String second = "Apple";
 		String third = "Peach";
-		assertEquals(third, findMax.findMaxString(first, second, third));
+		assertEquals(third, findMax.findMax(first, second, third));
 	}
 	
 }
